@@ -32,5 +32,10 @@ namespace MvcApplicationSignalR.Controllers
             ViewBag.Message = "Your SignalR page.";
             return View();
         }
+
+        public ActionResult MongoDB()
+        {
+            return View();
+        }
     }
 }

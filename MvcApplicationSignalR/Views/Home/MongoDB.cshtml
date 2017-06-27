@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MvcApplicationSignalR.Models.TimeCard> 
+@{ 
+    ViewBag.Title = "MongoDB"; 
+} 
+<h2>Index</h2> 
+<p> 
+    @Html.ActionLink("Create New","Index") 
+</p> 
+<table> 
+    <tr> 
+        <th>@Html.DisplayNameFor(model => model.Subject)</th> 
+        <th>@Html.DisplayNameFor(model => model.Description)</th> 
+        <th>@Html.DisplayNameFor(model => model.StartDate)</th> 
+        <th>@Html.DisplayNameFor(model => model.EndDate)</th> 
+        <th></th> 
+    </tr> 
+    @*@foreach (var item in Model) 
+    { 
+        <tr> 
+            <td>@Html.DisplayFor(modelItem => item.Subject)</td> 
+            <td>@Html.DisplayFor(modelItem => item.Description)</td> 
+            <td>@Html.DisplayFor(modelItem => item.StartDate)</td> 
+            <td>@Html.DisplayFor(modelItem => item.EndDate)</td> 
+            <td>@Html.ActionLink("Edit", "Index", new { id = item.Id }) | 
+                @Html.ActionLink("Details", "Index", new { id = item.Id }) | 
+                @Html.ActionLink("Delete", "Index", new { id = item.Id }) 
+            </td> 
+        </tr> 
+    }*@ 
+</table> 
+
